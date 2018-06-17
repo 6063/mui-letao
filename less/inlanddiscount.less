@@ -1,0 +1,101 @@
+@import './common.less';
+
+#main{
+    .mui-row{
+        background-color: #fff;
+        border-top:1px solid #ccc;
+        border-left:1px solid #ccc;
+        
+        li{
+            height: 289px;
+            border-right:1px solid #ccc;
+            border-bottom:1px solid #ccc;
+            a{
+                height: 289px;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .img{
+                    width: 140px;
+                    height: 140px;
+                    margin: 0 auto;
+                    img{
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
+                .title {
+                    color: #333333;
+                    word-break: break-all;
+                    white-space: normal;
+                    text-overflow: ellipsis;
+                    font-size: 14px;
+                    line-height: 18px;
+                    height: 36px;
+                    word-break: break-all;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    display:-webkit-box;
+                    -webkit-box-orient:vertical;
+                    
+                }
+                .subtit {
+                    color: #ff6c00;
+                    font-size: 14px;
+                    word-break: break-all;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    white-space: normal;
+                    height: 18px;
+                    line-height: 18px;
+                }
+                .info {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                .mall{
+                    color: #a1a1a1;
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+}
+
+#header {
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    text-align: center;
+    a{
+        max-width:45px;
+    }
+    .backPrePage {
+      color: #fff;
+      font-size: 26px;
+  
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .appdown {
+      height: 100%;
+      padding-top: 7px;
+      padding-right: 7px;
+      a {
+        display: block;
+        max-width: 35px;
+        img {
+          max-height: 34px;
+          max-width: 35px;
+          overflow: hidden;
+        }
+      }
+    }
+  }

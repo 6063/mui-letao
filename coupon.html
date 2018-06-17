@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+   <link rel="stylesheet" href="./lib/mui/css/mui.css">
+   <script src="./lib/font-awesome/css/font-awesome.css"></script>
+   <link rel="stylesheet/less" href="./less/youhui.less">
+   <script src="./lib/less/less.js"></script>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <a href="#" class="backPrePage mui-pull-left">
+            <i><</i>
+        </a>
+        <span class="title" class="mui-pull-left">优惠券</span>
+        <div class="appdown mui-pull-right">
+            <a href="#">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+
+    <!-- 主体部分 -->
+    <main id="main">
+        <div class="content">
+            <!-- 区域滚动的父容器 -->
+            <div class="mui-scroll-wrapper">
+                <!-- 区域滚动的子容器 -->
+                <div class="mui-scroll">                        
+                  
+                    <div class="navContent">
+
+                        <div class="mui-content">
+                            <div class="mui-row datas">
+                                                               
+                            </div>
+                        </div>
+
+
+                        <div class="quan">
+                            <a href="./index.html">首页</a> > 优惠券
+                        </div>
+                    </div>
+                   
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 尾部区域 -->
+    <footer id="footer">
+        <div class="top">
+            <div class="mui-content">
+                <div class="mui-row">
+                    <div class="mui-col-xs-4 mui-col-sm-4">
+                        <a class="mui-table-view-cell">
+                            登录
+                        </a>
+                    </div>
+                    <div class="mui-col-xs-4 mui-col-sm-4">
+                            <a class="mui-table-view-cell">
+                                注册
+                            </a>
+                        </div>
+                    <div class="mui-col-sm-4 mui-col-xs-4">
+                        <a class="mui-table-view-cell">
+                            <img src="./images/top.jpg" alt="">
+                            返回顶部
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="content">
+                <p>
+                    <a href="#" class="app">手机APP下载</a>
+                    <a href="#" class="phone">慢慢买手机版</a>
+                    --掌上比价平台
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/html" id="contents">
+       {{each result}}
+            <div class="mui-col-sm-4 mui-col-xs-4">
+                    <li class="mui-table-view-cell" data-name={{$value.couponTitle}} data-id={{$value.couponId}}>
+                        <a  href="#">
+                           <img src="{{$value.couponImg}}">
+                           <p>{{$value.couponTitle}}</p>    
+                        </a>
+                    </li>
+                </div>
+       {{/each}}
+    </script>
+    <!-- 1.引入需要的文件 -->
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/youhui.js"></script>
+    <!-- 引入共同的js文件 -->
+</body>
+</html>

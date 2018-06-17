@@ -1,0 +1,79 @@
+@import './common.less';
+
+#main{
+    background-color: rgb(242,242,242);
+    .searchBar{
+        height: 51px;
+        border-bottom:1px solid #ccc;
+        background-color: #fff;
+        padding:10px;
+        input {                
+            border: none;
+            background: #f1f1f1;
+            margin: 0px;
+            padding: 0px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 15px;
+            padding-left: 10px;
+            width: 90%;
+            padding-left: 5%;
+            font-size: 16px;
+        }
+        button{
+            width: 63px;
+            background: #ff841d;
+            color: #FFFFFF;
+            border: none;
+            height: 30px;
+            border-radius: 15px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 16px;            
+        }
+    }
+
+    .bigbox{
+        width: 100%;
+        padding:5px;
+        background-color: rgb(235,235,235); 
+        .products{        
+            width: 100%;
+            border:2px solid #ccc;
+            height:auto;
+            border-radius:10px;
+            overflow: hidden;
+            li{
+                background-color: #eee;
+            }
+            .top{           
+                padding:0;
+                border-left:1px solid #c4c4c4;
+                border-top:1px solid #c4c4c4;
+                .mui-content{
+                    background-color:#fff;
+                    .mui-row{
+                        .mui-col-xs-4{
+                            border-right:1px solid #c4c4c4;
+                            height: 40px;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-bottom:1px solid #c4c4c4;
+                            a{ 
+                                display:block;
+                                padding-right:0px;
+                                padding-left:0px;
+                                width: 100%; 
+                                color:#5a5a5a;                      
+                                text-align: center;
+                                font-size:12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

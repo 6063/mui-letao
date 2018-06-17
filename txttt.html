@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <style>
+        #demo1{
+            height: 15px;
+            border:1px solid red;
+            background-color: pink;
+            border-radius: 5px;
+            width: 100px;            
+        }
+        #demo1 span{
+            text-align:right;
+        }
+        .mui-progressbar span{
+            background: red;
+            color:#fff;
+            font-size: 12px;
+            line-height: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="demo1" class="mui-progressbar">
+        <span>34%</span>
+    </div>
+</body>
+</html>
+<script>
+    $(function(){       
+        var str='asyxtftwyv<span>67%</span>456789hbxh';
+        var stt = str.split('<span>')[1].split('</span>')[0]; 
+        var percentData = stt.split('%')[0];
+        $("#demo1 span").html(stt);
+        mui("#demo1").progressbar({progress:percentData}).show();      
+    })
+</script>

@@ -1,0 +1,127 @@
+@import './common.less';
+.searchBar{
+    height: 51px;
+    border-bottom:1px solid #ccc;
+    background-color: #fff;
+    padding:10px;
+    input {                
+        border: none;
+        background: #f1f1f1;
+        margin: 0px;
+        padding: 0px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+        padding-left: 10px;
+        width: 90%;
+        padding-left: 5%;
+        font-size: 16px;
+    }
+    button{
+        width: 63px;
+        background: #ff841d;
+        color: #FFFFFF;
+        border: none;
+        height: 30px;
+        border-radius: 15px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 16px;
+     
+    }
+}
+
+#main{
+    
+    .navContent{
+        height: 38px;
+        line-height: 38px;
+        padding-left:10px;
+        background-color: rgb(242,242,242);
+        a{
+            color:rgb(158, 147, 147);
+        }
+    }
+
+    .topContent{
+
+        background-color: #fff;
+        .tuwenTitle{
+            padding:15px;
+            text-align: center;
+            color:#000;
+        }
+        .imgs{
+            height: 180px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 160px;
+                max-height: 160px;
+            }
+        }
+        table{
+            height: 50px;
+            line-height: 50px;
+            font-size:14px;
+            border-bottom: 1px solid #ccc;
+            .red{
+                color:red;
+            }
+        }
+        .lists{
+            list-style: none;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 34px;
+            border:1px solid orangered;
+            li{
+                flex:1;
+                text-align: center;
+                color:#fff;
+                font-size:14px;
+                line-height: 34px;
+                border-bottom: 1px solid orangered;
+                border-top: 1px solid orangered;
+                border-left:1px solid rgb(223, 80, 28);
+                &:nth-child(1){
+                    background-color: rgb(255,145,3);
+                }
+                &:nth-child(2){
+                    background-color: rgb(255,187,1);
+                }
+                &:nth-child(3){
+                    background-color: rgb(255,187,1);
+                }
+            }
+        }
+        .note{
+            font-size:12px;
+            color:#888;
+        }
+    }
+
+    .comments{
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        background-color: #dbdbdb;
+        font-size:14px;
+    }
+    .commentContent{
+        background-color: #fff;
+        display:flex;
+        flex-direction: column;
+        border-bottom: 1px solid #ccc;
+        color:#888;
+        font-size:12px;
+        .mainContent{
+            color:#000;
+            font-size:14px;
+        }
+
+    }
+}

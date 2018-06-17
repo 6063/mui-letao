@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+   <link rel="stylesheet" href="./lib/mui/css/mui.css">
+   <script src="./lib/font-awesome/css/font-awesome.css"></script>
+   <link rel="stylesheet/less" href="./less/detail.less">
+   <script src="./lib/less/less.js"></script>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="left mui-pull-left">
+            <a href="#" class="logo" alt="Logo" title="慢慢买">
+                <img src="./images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="right mui-pull-right">
+            <a href="#" class="download" alt="手机app下载" title="手机app下载"> 
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+
+    <!-- 主体部分 -->
+    <main id="main">
+        <div class="content">
+            <!-- 区域滚动的父容器 -->
+            <div class="mui-scroll-wrapper">
+                <!-- 区域滚动的子容器 -->
+                <div class="mui-scroll">                        
+                    <!-- 真实要显示的DOM内容 -->
+                    <div class="searchBar">
+                        <input value="" name="key" type="search" placeholder="请输入你想比价的商品">
+                        <button class="searchbtn" type="submit" value="搜索">搜索</button>                            
+                    </div>
+                    <div class="navContent">
+
+                    </div>
+                    <div class="topContent">
+                        <div class="tuwen"> 
+                            <p class="tuwenTitle"></p>
+                            <img src="./images/header_logo.png" alt="">
+                        </div>
+                        <ul class="lists">
+                            <li>比价购买</li>
+                            <li>产品参数</li>
+                            <li>评价（222）</li>
+                        </ul>
+                        <div class="note">
+                             &nbsp; *&nbsp;&nbsp;实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div class="comments">
+                            网友评价
+                        </div>
+                        <div class="commentAll">
+                           
+                        </div>
+                        <div class="comments">
+                            查看更多评价
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 尾部区域 -->
+    <footer id="footer">
+        <div class="top">
+            <div class="mui-content">
+                <div class="mui-row">
+                    <div class="mui-col-xs-4 mui-col-sm-4">
+                        <a class="mui-table-view-cell">
+                            登录
+                        </a>
+                    </div>
+                    <div class="mui-col-xs-4 mui-col-sm-4">
+                            <a class="mui-table-view-cell">
+                                注册
+                            </a>
+                        </div>
+                    <div class="mui-col-sm-4 mui-col-xs-4">
+                        <a class="mui-table-view-cell">
+                            <img src="./images/top.jpg" alt="">
+                            返回顶部
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="content">
+                <p>
+                    <a href="#" class="app">手机APP下载</a>
+                    <a href="#" class="phone">慢慢买手机版</a>
+                    --掌上比价平台
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script id="oneTmp" type="text/html">
+        {{each result}}
+            <div class="commentContent">
+                <div class="title">
+                    <span class="mui-pull-left">{{$value.comName}}</span>
+                    <span class="mui-pull-right">{{$value.comTime}}</span>
+                </div>
+                <div >
+                    <span class="mui-pull-right">{{$value.comFrom}}</span>
+                </div>
+                <div class="mainContent">
+                    {{$value.comContent}}
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="twoTmp">
+        {{each result}}
+            <div class="tuwen"> 
+                <p class="tuwenTitle">{{$value.productName}}</p>
+                <div class="imgs">{{#$value.productImg}}</div>
+            </div>
+            <ul class="lists">
+                <li>比价购买</li>
+                <li>产品参数</li>
+                <li>评价（222）</li>
+            </ul>
+            {{#$value.bjShop}}
+            <div class="note">
+                    &nbsp; *&nbsp;&nbsp;实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+            </div>
+        {{/each}}
+    </script>
+
+
+
+    <!-- 1.引入需要的文件 -->
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/detail.js"></script>
+    <!-- 引入共同的js文件 -->
+</body>
+</html>

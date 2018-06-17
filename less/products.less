@@ -1,0 +1,91 @@
+@import './common.less';
+
+.searchBar{
+    height: 51px;
+    border-bottom:1px solid #ccc;
+    background-color: #fff;
+    padding:10px;
+    input {                
+        border: none;
+        background: #f1f1f1;
+        margin: 0px;
+        padding: 0px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+        padding-left: 10px;
+        width: 90%;
+        padding-left: 5%;
+        font-size: 16px;
+    }
+    button{
+        width: 63px;
+        background: #ff841d;
+        color: #FFFFFF;
+        border: none;
+        height: 30px;
+        border-radius: 15px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 16px;
+     
+    }
+}
+
+#main{
+    background-color: #fff;
+    .title{
+        height: 38px;
+        line-height: 38px;
+        padding-left:10px;
+        background-color: rgb(242,242,242);
+        a{
+            color:rgb(158, 147, 147);
+        }
+    }
+
+    .productBox{
+        li{
+            border-bottom: 1px solid #eee;
+        }
+        span{
+            font-size:12px;
+        }
+        .productName{
+            font-size:12px;
+            color:#000;
+            white-space: normal;
+            word-break: break-all;
+            line-height: 19px;
+            overflow: hidden;
+        }
+        .price{
+            color:#ff6c00;
+            font-size:14px;
+        }
+
+    }
+
+    .paging{
+        height: 65px;
+        width: 100%;
+        background-color: rgb(242,242,242);
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        button{
+            background-color: rgb(213,213,213);
+        }
+        #selectPage{
+            line-height: 10px;           
+            height: 32px;
+            border:1px solid #ccc !important;
+            width: 67px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    
+}

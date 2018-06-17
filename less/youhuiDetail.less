@@ -1,0 +1,132 @@
+@import './common.less';
+
+#header {
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    text-align: center;
+    a{
+        max-width:45px;
+    }
+    .backPrePage {
+      color: #fff;
+      font-size: 26px;
+  
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .appdown {
+      height: 100%;
+      padding-top: 7px;
+      padding-right: 7px;
+      a {
+        display: block;
+        max-width: 35px;
+        img {
+          max-height: 34px;
+          max-width: 35px;
+          overflow: hidden;
+        }
+      }
+    }
+}
+
+
+#main .navContent{
+    li{
+        border-bottom:1px solid #ccc;  
+        display:flex;
+        padding:5px;
+        a{
+            width: 100%;
+            display:flex;
+            justify-content: space-around;
+            margin:0;
+            img{
+                max-width: 90px;
+                max-height:90px;
+                margin:0 5px 0 -8px;
+            }
+            .mui-media-body{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                p{
+                    color:#000;
+                    font-size:14px;
+                    white-space: normal;
+                    display: -webkit-box; 
+                    -webkit-line-clamp: 2; 
+                    -webkit-box-orient: vertical; 
+                    overflow: hidden;
+                }
+                p:last-child {
+                    color:orange;
+                }
+            }
+            
+        }
+
+        
+                      
+        // >a{
+        //     width: 100px;
+        //     padding-right:5px;
+        //     padding-left:5px;
+        //     margin-right:10px;
+        //     img{
+        //         max-width: 90px;
+        //         max-height:90px;
+        //         margin:0 auto;
+        //     }
+        // }
+
+    }
+}
+
+.mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(22,22,22,.5);    
+    display:none;
+    top:0;
+    left:0;
+    z-index:1333;
+    .xx{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .aaa{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 6666;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .hh{
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 7777;
+        height: 20px;
+        font-size: 33px;
+        color: #000;
+        position: absolute;
+        .hhLeft{
+            float:left;
+        }
+        .hhRight{
+            float:right;
+        }
+    }
+    
+}
